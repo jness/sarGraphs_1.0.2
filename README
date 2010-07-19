@@ -1,0 +1,19 @@
+sarGraphs
+
+sarGraphs takes the output of sar (sysstat) and creates a 
+graphical (gnuplot) PHP Web interface.
+
+This software has been tested to work on Redhat and CentOS 5 server's, but should work
+on any Redhat based server with sysstat, gnuplut, apache, and php.
+
+ Instructions:
+
+ 1) After the rpm is installed edit '/etc/httpd/conf.d/sarGraphs.conf' and uncomment the 
+ new virtual host to enable the site, after doing this reload or restart httpd.
+
+ 2) Next alter '/etc/cron.d/sarGraphs' and uncomment the cron entry to schedule it.
+
+ 3) At this point you should be able to access http://server/sarGraphs, the password to login
+ it located in /opt/sarGraphs-%{version}/password_file.php
+
+
