@@ -54,6 +54,14 @@ report="sar $input2"
 elif [ $input == 'swap' ]
 then
 report="sar -r $input2"
+elif [ $input == 'all' ]
+then
+$0 cpu
+$0 network
+$0 load
+$0 memory
+$0 io
+$0 swap
 fi
 #
 # Get the date from the Current SAR Reports
